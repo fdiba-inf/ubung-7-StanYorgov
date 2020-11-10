@@ -14,12 +14,12 @@ public class RecursivePrimePrinter {
 
     public static void printPrimes(int n) {
         // Implement recursive method
-        if (n == 2) {
-            System.out.print(n - 1);
+        if (n == 1) {
+            System.out.print(n);
             return;
         }
-        if (isPrime(n - 1)) {
-            System.out.println(n - 1);
+        if (isPrime(n)) {
+            System.out.println(n);
         }
         printPrimes(n - 1);
     }
@@ -27,7 +27,7 @@ public class RecursivePrimePrinter {
     public static boolean isPrime(int n) {
         // Implement method
         boolean primeNum = true;
-        for (int i = 2; i < n / 2; i++) {
+        for (int i = 2; i < n; i++) {
             if (n % i == 0) {
                 primeNum = false;
                 break;
