@@ -29,7 +29,7 @@ public class Triangle {
             if (i != end) {
                 System.out.print(i + " ");
             } else {
-            System.out.print(i);
+                System.out.print(i);
             }
         }
 
